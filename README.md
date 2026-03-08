@@ -18,7 +18,11 @@ $$S_i = R_i + 0.5 \cdot W_i$$
 ### 2. コスト関数 (Cost Function)
 力士 $i$ と力士 $j$ を対戦させる際の実力差（コスト） $C_{ij}$ を定義します。
 場所の進行に伴い、編成の意図が「番付重視」から「勝敗重視」へ遷移することを表現するため、動的重みパラメータ $\alpha_t, \beta_t$ を導入します。
+
+
 $$C_{ij} = \alpha_t |S_i - S_j| + \beta_t |\text{Win}_i - \text{Win}_j| - \gamma \cdot \text{sim}(T_i, T_j)$$
+
+
 *(※ $\gamma$項は将来的な「取り口（戦型）の親和性ボーナス」)*
 
 ### 3. 最適化問題の定式化 (Optimization Problem)
