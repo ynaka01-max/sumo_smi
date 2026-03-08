@@ -1,4 +1,4 @@
-# Sumo Smi　(Sumo Matching Intelligence, SMI)
+# Sumo SMI　(Sumo Matching Intelligence)
 **大相撲取組編成の数理最適化と「意図」のリバースエンジニアリング**
 
 ## プロジェクト概要(Overview)
